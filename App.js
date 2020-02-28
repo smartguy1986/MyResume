@@ -52,7 +52,7 @@ export default function App(props) {
         <NavigationContainer ref={containerRef} initialState={initialNavigationState}>
           <Stack.Navigator
             screenOptions={{
-              headerShown: true,
+              headerShown: false,
               headerTintColor: 'grey',
               headerStyle: { backgroundColor: '#fbfbfb', height: 50, shadowRadius: 0, shadowOffset: { height: 0, }, elevation: 0, shadowOpacity: 0, borderBottomWidth: 0},
             }}>

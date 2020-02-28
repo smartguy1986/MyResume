@@ -20,7 +20,7 @@ export default function BottomTabNavigator({ navigation, route }) {
 
   return (
     <Tab.Navigator
-      barStyle={{ backgroundColor: '#fbfbfb' }}
+      barStyle={{ backgroundColor: '#eee' }}
     >
       <Tab.Screen
         name="Home"
