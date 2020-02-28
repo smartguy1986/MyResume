@@ -20,7 +20,7 @@ export default function BottomTabNavigator({ navigation, route }) {
 
   return (
     <Tab.Navigator
-      barStyle={{ backgroundColor: '#eee' }}
+      barStyle={{ backgroundColor: '#000', borderTopColor: '#c32865', borderStyle: 'dashed', }}
     >
       <Tab.Screen
         name="Home"
@@ -30,7 +30,7 @@ export default function BottomTabNavigator({ navigation, route }) {
           showLabel: false,
           tabBarIcon: ({ tintColor }) => (
             <View>
-              <Image source={require('../src/assets/img/about.png')} style={{ width: 32, height: 32, }} />
+              <Image source={require('../src/assets/img/about2.png')} style={{ width: 32, height: 32, }} />
             </View>),
         }}
       />
@@ -42,7 +42,7 @@ export default function BottomTabNavigator({ navigation, route }) {
           tabBarLabel: '',
           tabBarIcon: ({ tintColor }) => (
             <View>
-              <Image source={require('../src/assets/img/portfolio.png')} style={{ width: 32, height: 32, }} />
+              <Image source={require('../src/assets/img/portfolio2.png')} style={{ width: 32, height: 32, }} />
             </View>),
         }}
       />
@@ -54,7 +54,7 @@ export default function BottomTabNavigator({ navigation, route }) {
           tabBarLabel: '',
           tabBarIcon: ({ tintColor }) => (
             <View>
-              <Image source={require('../src/assets/img/experiences.png')} style={{ width: 32, height: 32, }} />
+              <Image source={require('../src/assets/img/experiences2.png')} style={{ width: 32, height: 32, }} />
             </View>),
         }}
       />
@@ -66,7 +66,7 @@ export default function BottomTabNavigator({ navigation, route }) {
           tabBarLabel: '',
           tabBarIcon: ({ tintColor }) => (
             <View>
-              <Image source={require('../src/assets/img/contact.png')} style={{ width: 32, height: 32, }} />
+              <Image source={require('../src/assets/img/contact2.png')} style={{ width: 32, height: 32, }} />
             </View>),
         }}
       />
