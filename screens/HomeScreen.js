@@ -15,7 +15,6 @@ export default function HomeScreen() {
     <ImageBackground
       source={require('../src/assets/img/arijit-black2.jpg')} style={{ width: '100%', height: '100%' }}>
       <View style={styles.container}>
-
         <View style={styles.topContainer}>
           <View style={{ flexDirection: 'row', }}>
             <View style={{ width: 30 }}>
@@ -38,7 +37,7 @@ export default function HomeScreen() {
         <ScrollView style={styles.scrollView}>
           <View style={styles.bottomContainer}>
             <View style={styles.nameContainer}>
-              <Text style={styles.nameBig}>Howdy,</Text>
+              <Text style={styles.nameBig}>Hi,</Text>
               <Text style={styles.smallBig}>I'm</Text>
               <Text style={styles.smallBig}>Arijit</Text>
             </View>
@@ -47,7 +46,7 @@ export default function HomeScreen() {
             <Text style={styles.introtext}>Experienced in developing applications and solutions for a wide range of corporate, charity and public sector clients and having the enthusiasm and ambition to complete projects to the highest standard. Efficient in WordPress, CodeIgniter and having knowledge of CakePHP, Laravel and React framework development.</Text>
 
             <View style={styles.education}>
-              <Text style={styles.bigheading}>Education <Image source={require('../src/assets/img/book.png')} style={{ width: 32, height: 32, marginLeft: '5%', }}></Image></Text>
+               <Text style={styles.bigheading}>Education</Text> 
               <View style={styles.divider}></View>
               <Text style={{ fontWeight: 'bold', fontSize: 22, color: '#fff', }}>Calcutta University <Text style={{ fontSize: 22, color: '#c32865', }}>2009</Text></Text>
               <Text style={{ fontSize: 16, color: '#fff' }}>B.Sc. General in Economics</Text>
@@ -61,7 +60,7 @@ export default function HomeScreen() {
             </View>
             <View style={styles.divider}></View>
             <View style={styles.skills, { alignItems: 'flex-end', alignContent: 'flex-end', alignSelf: 'flex-end', }}>
-              <View style={styles.rightbox}><Text style={styles.bigheading2}> Skills</Text><Image source={require('../src/assets/img/skills.png')} style={{ width: 32, height: 32, marginRight: '5%', marginTop: '7%', }}></Image></View>
+              <View style={styles.rightbox}><Text style={styles.bigheading2}> Skills</Text></View>
               <View style={styles.divider}></View>
               <Text style={{ fontSize: 20, color: '#fff'}}>HTML, CSS</Text>
               <Text style={{ fontSize: 20, color: '#fff'}}>PHP, MYSQL</Text>
@@ -74,21 +73,22 @@ export default function HomeScreen() {
             </View>
             <View style={styles.divider}></View>
             <View style={styles.strenghts}>
-              <Text style={styles.bigheading}>Strength <Image source={require('../src/assets/img/strength.png')} style={{ width: 32, height: 32, marginLeft: '5%', }}></Image></Text>
+              <Text style={styles.bigheading}>Strength</Text>
               <View style={styles.divider}></View>
               <Text style={{ fontSize: 20, color: '#fff' }}>Hard Working, Self-Motivating, Quick Learner, Team Work, Creative</Text>
               <View style={styles.divider}></View>
             </View>
             <View style={styles.divider}></View>
             <View style={styles.languages, { alignItems: 'flex-end', alignContent: 'flex-end', alignSelf: 'flex-end', }}>
-              <View style={styles.rightbox}><Text style={styles.bigheading2}> Languages</Text><Image source={require('../src/assets/img/language.png')} style={{ width: 32, height: 32, marginRight: '5%', marginTop: '7%', }}></Image></View>
+              <View style={styles.rightbox}><Text style={styles.bigheading2}> Languages</Text></View>
               <View style={styles.divider}></View>
               <Text style={{ fontSize: 20, color: '#fff' }}>Bengali, English, Hindi</Text>
               <View style={styles.divider}></View>
             </View>
-
           </View>
         </ScrollView>
+        <View style={styles.divider}></View>
+        <View style={styles.divider}></View>
       </View>
     </ImageBackground>
   );
@@ -119,6 +119,9 @@ const styles = StyleSheet.create({
     paddingTop: '5%',
     //backgroundColor: '#fbfbfb',
     flexDirection: 'column',
+  },
+  scrollView:{
+    marginBottom: '2%',
   },
   imageContainer: {
     width: '50%',
