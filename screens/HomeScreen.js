@@ -5,11 +5,6 @@ import * as WebBrowser from 'expo-web-browser';
 
 import { MonoText } from '../components/StyledText';
 
-const skills = [
-  {type: "Java", level: 85},
-  {type: "Javascript", level: 75},
-];
-
 export default function HomeScreen() {
   return (
     <ImageBackground
